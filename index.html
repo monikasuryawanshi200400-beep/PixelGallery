@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PixelGallery </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <a href="#" class="logo">Pixel<span>Gallery</span> ♡</a>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#about">About</a>
+  </nav>
+  <button id="themeBtn"></button>
+</header>
+
+<section class="hero" id="home">
+  <p class="eyebrow">✦ EXPLORE THE WORLD ✦</p>
+  <h1>Beautiful Moments<br><span>in Every Frame ♡</span></h1>
+  <p>A gallery of nature, travel, people and beautiful memories.</p>
+</section>
+
+<main id="gallery" class="container">
+  <div class="toolbar">
+    <div class="filters">
+      <button class="filter active" data-category="All">All Photos</button>
+      <button class="filter" data-category="Nature">Nature</button>
+      <button class="filter" data-category="Travel">Travel</button>
+      <button class="filter" data-category="People"> People</button>
+      <button class="filter" data-category="Animals">Animals</button>
+      <button class="filter" data-category="Architecture"> Buildings</button>
+    </div>
+    <input id="search" type="search" placeholder="🔍 Search photos...">
+  </div>
+
+  <div id="galleryGrid" class="gallery-grid"></div>
+  <p id="empty" hidden>No photos found. Try another search!</p>
+</main>
+
+<section id="about" class="about">
+  <h2>Collect moments, not things. ♡</h2>
+  <p>Made with  using HTML, CSS and JavaScript.</p>
+</section>
+
+<div id="lightbox" class="lightbox" hidden>
+  <button id="close" class="close">×</button>
+  <button id="prev" class="arrow">❮</button>
+  <figure>
+    <img id="largeImage" src="" alt="">
+    <figcaption id="caption"></figcaption>
+    <p id="counter"></p>
+  </figure>
+  <button id="next" class="arrow">❯</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
